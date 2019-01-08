@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="Shortcut Icon" href="./image/PhotochemCADLogo.jpg">
+    <title>PorphyrinViLiGe</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Spectral">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>PhotochemCAD</h1>
+            <h3>calculational modules and a database of absorption and emission spectra for diverse compounds</h3>
+        </div>
+        <div class="navitems" id="navbar">
+            <ul>
+                <li>
+                    <a href="PhotochemCAD.html">PhotochemCAD™</a>
+                </li>
+                <li>
+                    <a href="homepage.php">Spectra by Name</a>
+                </li>
+                <li>
+                    <a href="#">Spectra by Structure</a>
+                </li>
+                <li>
+                    <a href="download.html">Download</a>
+                </li>
+                <li>
+                    <a href="https://sites.google.com/a/ncsu.edu/lindsey-lab/">Lindsey Lab</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main" id="main">
+        <aside>
+            <img src="./image/PorphvilLogo.jpg" alt="PhotochemCAD Logo" class="side-logo">
+        </aside>
+        <section>
+            <h1>About PorphyrinViLiGe™</h1>
+            The
+            <em>PorphyrinViLiGe™</em> program was developed to simulate combinatorial processes and to enumerate products and
+            isomers in the domain of porphyrins (and other tetrapyrrole macrocycles) via virtual library generation.  The
+            program was conceived, developed and tested by Drs. Masahiko Taniguchi, Hai Du, and Jonathan S. Lindsey from
+            summer 2010 – summer 2011. The program and results have been described:
+            <a href="http://pubs.acs.org/doi/abs/10.1021/ci200240e">"Virtual Libraries of Tetrapyrrole Macrocycles. Combinatorics, Isomers, Product Distributions, and Data Mining</a>,"
+            Taniguchi, M.; Du, H.; Lindsey, J. S.
+            <em> J. Chem. Info. Model.</em>
+            <strong>2011</strong>,
+            <em>51</em>, 2233–2247. The program has been applied in one example concerning prebiotic chemistry: "
+            <a href="http://pubs.rsc.org/en/content/articlelanding/2012/nj/c2nj21050a">Tandem Combinatorial Model for the Prebiogenesis of Diverse Tetrapyrrole Macrocycles</a>," Taniguchi, M.; Soares,
+            A. R. M.; Chandrashaker, V.; Lindsey, J. S.
+            <em>New J. Chem.</em>
+            <strong>2012</strong>,
+            <em> 36</em>, 1057-1069. New terminology was recently introduced to delineate isomers within combinatorial libraries:
+            "
+            <a href="http://www.worldscientific.com/doi/abs/10.1142/S1088424612004628">Diversity, Isomer Composition, and Design of Combinatorial Libraries of Tetrapyrrole Macrocycles</a>," Taniguchi,
+            M.; Lindsey, J. S.
+            <em>J. Porphyrins Phthalocyanines</em>
+            <strong>2012</strong>,
+            <em>16</em>, 1-13. A lengthy review concerning tetrapyrrole isomers has been prepared: "
+            <a href="http://www.worldscientific.com/doi/abs/10.1142/9789814397605_0009">Enumeration of Isomers of Substituted Tetrapyrrole Macrocycles: From Classical Problems in Biology to Modern
+                Combinatorial Libraries</a>," Taniguchi, M.; Lindsey, J. S.in
+            <em>Handbook of Porphyrin Science</em>; Kadish, K. M.; Smith, K. M.; Guilard, R., Eds.; World Scientific: Singapore,
+            2012, Vol. 23, pp. 1-80.
+            <h2>Current version</h2>
+            <em>PorphyrinViLiGe™</em> 1.0 employs the aforementioned new terminology to delineate isomers. To inquire about
+            obtaining a preprint, please
+            <a href="mailto:jslindse@ncsu.edu">contact the authors</a>. Also, please feel free to
+            <a href="mailto:jslindse@ncsu.edu">send any questions</a> about operation of
+            <em>PorphyrinViLiGe™.</em>
+            <h2>Download</h2>
+            <ol>
+                <li><a class="btn" href="./download/PorphyrinViLiGe.zip" download>Download</a> and un-ZIP the PorphyrinViLiGe™ program files. All unzipped files must reside in one folder; the folder can be saved anywhere on your computer.</li>
+                <li>The unzipped files are:
+                        Example Files (folder), 
+                        BASEMasses.txt, 
+                        mwtable.csv, 
+                        PorphyrinViLiGe.exe, 
+                        Reagents.txt.</li>
+                <li>There is no installer. The name of the extracted executable file is PorphyrinViLiGe.exe. Start the program by double-clicking the executable file, PorphyrinViLiGe.exe.</li>
+                <li><em>PorphyrinViLiGe™</em> runs under Windows XP, Vista, and 7. There is no Macintosh version of<em>PorphyrinViLiGe™.</em></li>
+                <li>Make sure the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=21">Microsoft .net framework</a> version 3.5 or higher is installed on your computer.</li>
+                <li>To explore the example files, select File/Open from the PorphyrinViLiGe™ menu bar and select one of the numbered items. The folder of example files will open, and you can select any example file.</li>
+            </ol>
+
+    </div>
+
+    <footer>
+        Copyright © 2004-2018 Jonathan S. Lindsey.
+    </footer>
+    <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+           // when the user scrolls the page, execute stick function
+            window.onscroll = function () {
+              stick()
+            };
+            // get the navbar and right aside
+            var navbar = document.getElementById("navbar");
+            var main = document.getElementById("main");
+           // get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+            
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "block";
+                }
+            });
+            }
+    
+            function stick() {
+            // change sticky style for navbar and right aside based on the navbar's position
+            if (window.pageYOffset >= sticky) {
+                // when the navbar is on the right top, keep navbar and right aside fixed
+                navbar.classList.add("sticky");
+                main.classList.add("main-margin");
+            } else {
+                // when the navbar is below the top, un-stick the navbar and right aside
+                navbar.classList.remove("sticky");
+                main.classList.remove("main-margin");
+            }
+        }
+    </script>
+</body>
+
+</html>

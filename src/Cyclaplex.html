@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="Shortcut Icon" href="./image/PhotochemCADLogo.jpg">
+    <title>Cyclaplex</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Spectral">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>PhotochemCAD</h1>
+            <h3>calculational modules and a database of absorption and emission spectra for diverse compounds</h3>
+        </div>
+        <div class="navitems" id="navbar">
+            <ul>
+                <li>
+                    <a href="PhotochemCAD.html">PhotochemCAD™</a>
+                </li>
+                <li>
+                    <a href="homepage.php">Spectra by Name</a>
+                </li>
+                <li>
+                    <a href="#">Spectra by Structure</a>
+                </li>
+                <li>
+                    <a href="download.html">Download</a>
+                </li>
+                <li>
+                    <a href="https://sites.google.com/a/ncsu.edu/lindsey-lab/">Lindsey Lab</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main" id="main">
+        <aside>
+            <img src="./image/CyclaplexannLogo.jpg" alt="PhotochemCAD Logo" class="side-logo">
+        </aside>
+        <section>
+            <h1>About Cyclaplex™</h1>
+            The
+            <em>Cyclaplex™</em> program was developed to simulate combinatorial processes that give rise to linear and cyclic
+            oligomers.  The program is a generalization of
+            <em>PorphyrinViLiGe™</em> and is applicable to diverse macrocycles derived from modular constituents.  The program
+            was conceived, developed and tested by Drs. Masahiko Taniguchi, Hai Du, and Jonathan S. Lindsey from summer 2012
+            – spring 2013. The program and results are described in the following article:
+            <ul>
+                <li>"
+                    <a href="http://pubs.acs.org/doi/abs/10.1021/ci400175f">Enumeration of Virtual Libraries of Combinatorial Modular Macrocyclic (Bracelet, Necklace) Architectures
+                        and their Linear Counterparts</a>," Taniguchi, M.; Du, H.; Lindsey, J. S.
+                    <em>J. Chem. Info. Model.</em>
+                    <strong>2013</strong>,
+                    <em>53</em>, 220-2216.</li>
+            </ul>
+            An illustration of the use of
+            <em>Cyclaplex</em>™ is provided in the following paper:
+            <ul>
+                <li>"
+                    <a href="http://dx.doi.org/10.1007/s11120-014-9975-x">Statistical Considerations on the Formation of Circular Photosynthetic Light-Harvesting Complexes from
+                        <em>Rhodopseudomonas</em>
+                        <em>palustris</em>,"</a> Taniguchi, M.; Henry, S.; Cogdell, R. J.; Lindsey, J. S.
+                    <em> Photosyn. Res</em>.
+                    <strong>2014</strong>,
+                    <em>121</em>, 49–60.</li>
+            </ul>
+            <h2>Current version</h2>
+            The current version is <em>Cyclaplex™</em> 1.0. To inquire about obtaining a preprint, please
+            <a href="mailto:jslindse@ncsu.edu">contact the authors</a>. Also, please feel free to
+            <a href="mailto:jslindse@ncsu.edu">send any questions</a> about operation of
+            <em>Cyclaplex™.</em>
+            <h2>Download</h2>
+            <ol>
+                <li><a class="btn" href="./download/CyclaPlex.zip" download>Download</a> and un-ZIP the Cyclaplex™ program files. All unzipped files must reside in one folder; the folder can be saved anywhere on your computer.</li>
+                <li>The unzipped files are:
+                        Example Files (folder), 
+                        Reagetns.txt, 
+                        mwtable.csv, 
+                        CyclaPlex.exe.</li>
+                <li>There is no installer. The name of the extracted executable file is CyclaPlex.exe. Start the program by double-clicking the executable file, CyclaPlex.exe.</li>
+                <li><em>Cyclaplex™</em> runs under Windows XP, Vista, and 7. There is no Macintosh version of<em>CyclaPlex.exe.</em></li>
+                <li>Make sure the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=21">Microsoft .net framework</a> version 3.5 or higher is installed on your computer.</li>
+                <li>To explore the example files, select File/Open from the Cyclaplex™ menu bar and select one of the numbered items. The folder of example files will open, and you can select any example file.</li>
+            </ol>
+
+    </div>
+
+    <footer>
+        Copyright © 2004-2018 Jonathan S. Lindsey.
+    </footer>
+    <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+           // when the user scrolls the page, execute stick function
+            window.onscroll = function () {
+              stick()
+            };
+            // get the navbar and right aside
+            var navbar = document.getElementById("navbar");
+            var main = document.getElementById("main");
+           // get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+            
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "block";
+                }
+            });
+            }
+    
+            function stick() {
+            // change sticky style for navbar and right aside based on the navbar's position
+            if (window.pageYOffset >= sticky) {
+                // when the navbar is on the right top, keep navbar and right aside fixed
+                navbar.classList.add("sticky");
+                main.classList.add("main-margin");
+            } else {
+                // when the navbar is below the top, un-stick the navbar and right aside
+                navbar.classList.remove("sticky");
+                main.classList.remove("main-margin");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="Shortcut Icon" href="./image/PhotochemCADLogo.jpg">
+    <title>About</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Spectral">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>PhotochemCAD</h1>
+            <h3>calculational modules and a database of absorption and emission spectra for diverse compounds</h3>
+        </div>
+        <div class="navitems" id="navbar">
+            <ul>
+                <li>
+                    <a href="PhotochemCAD.html">PhotochemCAD™</a>
+                </li>
+                <li>
+                    <a href="homepage.php">Spectra by Name</a>
+                </li>
+                <li>
+                    <a href="structure.php">Spectra by Structure</a>
+                </li>
+                <li>
+                    <a href="download.html">Download</a>
+                </li>
+                <li>
+                    <a href="https://sites.google.com/a/ncsu.edu/lindsey-lab/">Lindsey Lab</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main" id="main">
+        <aside>
+            <img src="./image/jsl.jpg" alt="Jonathan Lindsey" class="side-logo">
+        </aside>
+        <section>
+            <h1>About</h1>
+            <p><a href="pc.html">PhotochemCAD™</a>, <a href="pg.html">PorphyrinViLiGe™</a>, and <a href="cp.html">Cyclaplex™</a> were developed by Jonathan Lindsey and his coworkers. 
+                Redistribution and use in source and binary forms, with or without modification, are permitted provided 
+                that the following conditions are met:</p>
+            <ul>
+                <li>
+                    Redistributions of source code must retain the above copyright notice, this list of conditions and 
+                    the following disclaimer.
+                </li>
+                <li>
+                    Redistributions in binary form must reproduce the above copyright notice, this list of conditions 
+                    and the following disclaimer in the documentation and/or other materials provided with the distribution.
+                </li>
+                <li>
+                    The names “North Carolina State University”, “NCSU” and any trade‐name, personal name, trademark, trade device, 
+                    service mark, symbol, image, icon, or any abbreviation, contraction or simulation thereof owned by North Carolina 
+                    State University must not be used to endorse or promote products derived from this software without prior written 
+                    permission.
+                </li>
+            </ul>
+            <h2>Version History</h2>
+                The current version is <em>PhotochemCAD™ </em>3.0 (03/05/2018).
+                You can visit the <a href="http://www4.ncsu.edu/~jslindse/">Lindsey group</a> on the Web or <a href="mailto:jslindse@ncsu.edu">send email</a>.
+                <ul>
+                    <li>"<a href="http://dx.doi.org/10.1111/php.12862">PhotochemCAD 3: Diverse Modules for Photophysical Calculations with Access to Multiple Spectral Databases</a>," Taniguchi, M.; Du, H.; Lindsey, J. S. <em>Photochem. Photobiol.</em><strong> 2018</strong>, <em>94</em>, 277-289. DOI: 10.1111/php.12862.</li>
+                    <li>"<a href="http://dx.doi.org/10.1111/php.12860">Database of Absorption and Fluorescence Spectra of &gt;300 Common Compounds for Use in PhotochemCAD</a>," Taniguchi, M.; Lindsey, J. S. <em>Photochem. Photobiol.</em><strong> 2018</strong>, <em>94</em>, 290-327. DOI: 10.1111/php.12860<em>.</em></li>
+                    <li>"<a href="http://dx.doi.org/10.1111/j.1751-1097.2005.tb01544.x">PhotochemCAD 2. A Refined Program with Accompanying Spectral Databases for Photochemical Calculations</a>," Dixon, J. M.; Taniguchi, M.; Lindsey, J. S. <i>Photochem. Photobiol.</i> <b>2005</b>, <i>81</i>, 212-213.</li>
+                    <li>"<a href="http://dx.doi.org/10.1111/j.1751-1097.1998.tb02480.x">PhotochemCAD. A Computer-Aided Design and Research Tool in Photochemistry and Photobiology</a>," Du, H.; Fuh, R.-C. A.; Li, J.; Corkan, L. A.; Lindsey, J. S. <i>Photochem. Photobiol.</i> <b>1998</b>, <i>68</i>, 141-142.</li>
+               </ul>
+        </section>
+    </div>
+
+    <footer>
+        Copyright © 2004-2018 Jonathan S. Lindsey.
+    </footer>
+    <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+           // when the user scrolls the page, execute stick function
+            window.onscroll = function () {
+              stick()
+            };
+            // get the navbar and right aside
+            var navbar = document.getElementById("navbar");
+            var main = document.getElementById("main");
+           // get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+            
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "block";
+                }
+            });
+            }
+    
+            function stick() {
+            // change sticky style for navbar and right aside based on the navbar's position
+            if (window.pageYOffset >= sticky) {
+                // when the navbar is on the right top, keep navbar and right aside fixed
+                navbar.classList.add("sticky");
+                main.classList.add("main-margin");
+            } else {
+                // when the navbar is below the top, un-stick the navbar and right aside
+                navbar.classList.remove("sticky");
+                main.classList.remove("main-margin");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="Shortcut Icon" href="./image/PhotochemCADLogo.jpg">
+    <title>Photochemcad</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Spectral">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>PhotochemCAD</h1>
+            <h3>calculational modules and a database of absorption and emission spectra for diverse compounds</h3>
+        </div>
+        <div class="navitems" id="navbar">
+            <ul>
+              
+                <li>
+                    <a href="PhotochemCAD.html">PhotochemCAD™</a>
+                </li>
+                <li>
+                    <a href="homepage.php">Spectra by Name</a>
+                </li>
+                <li>
+                    <a href="structure.php">Spectra by Structure</a>
+                </li>
+                <li>
+                    <a href="download.html">Download</a>
+                </li>
+                <li>
+                    <a href="https://sites.google.com/a/ncsu.edu/lindsey-lab/">Lindsey Lab</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main" id="main">
+        <aside>
+            <img src="./image/PhotochemCADLogo.jpg" alt="PhotochemCAD Logo" class="side-logo"> 
+        </aside>
+        <section>
+                <h1><em>PhotochemCAD</em>™</h1>
+                <b>PhotochemCAD™</b> is a program of calculational modules 1 and accompanying database of
+                spectra 2 aimed at advancing the photosciences. A streamlined version of the same database of
+                spectra can now be viewed on our new website. The user is directed to the following journal
+                articles for full description of the program and database:
+                <ol>
+                <li>“PhotochemCAD 3: Diverse Modules for Photophysical Calculations with Access to
+                    Multiple Spectral Databases,” Taniguchi, M.; Du, H.; Lindsey, J. S. Photochem.
+                    Photobiol. <b>2018</b>, 94, 277–289. – <i>describes the overall organization of the program and
+                    provides a complete description of each module, including the formulas for all
+                    calculations</i>.
+                </li>
+                <li>“Database of Absorption and Fluorescence Spectra of &gt;300 Common Compounds for
+                    Use in PhotochemCAD,” Taniguchi, M.; Lindsey, J. S. Photochem. Photobiol. <b>2018</b>, 94,
+                    290–327. – <i>provides literature data for each spectrum including 720 references in total
+                    to the original scholarly literature</i>.
+                </li>
+                </ol>
+                <strong><em>PhotochemCAD™ 3 (program and <a href="homepage.php">database</a>) are now available for free <a href="download.html">downloading</a></em></strong>.
+                <div class="card-pack">
+                <div class="card">
+                    <h1>Website database by name</h1>
+                    <p><a href="homepage.php" class="a-button">View</a></p>
+                  </div>
+                  <div class="card">
+                    <h1>Website database by structure</h1>
+                    <p><a href="structure.php" class="a-button">View</a></p>
+                  </div>
+                  <div class="card">
+                    <h1>PhotochemCAD program and full database</h1>
+                    <p><a href="download.html" class="a-button">Download</a></p>
+                  </div>
+                  <div class="card">
+                    <h1>Other scientific programs</h1>
+                    <p><a href="Cyclaplex.html" class="a-button">Cyclaplex™</a></p>
+                    <p><a href="PorphyrinViLiGe.html" class="a-button">PorphyrinViLiGe™</a></p>
+                  </div>
+                </div>
+            </section>
+    </div>
+
+    <footer>
+            Copyright © 2004-2018 Jonathan S. Lindsey.
+          </footer>
+          <script>
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+               // when the user scrolls the page, execute stick function
+                window.onscroll = function () {
+                  stick()
+                };
+                // get the navbar and right aside
+                var navbar = document.getElementById("navbar");
+                var main = document.getElementById("main");
+               // get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                    } else {
+                    dropdownContent.style.display = "block";
+                    }
+                });
+                }
+        
+                function stick() {
+                // change sticky style for navbar and right aside based on the navbar's position
+                if (window.pageYOffset >= sticky) {
+                    // when the navbar is on the right top, keep navbar and right aside fixed
+                    navbar.classList.add("sticky");
+                    main.classList.add("main-margin");
+                } else {
+                    // when the navbar is below the top, un-stick the navbar and right aside
+                    navbar.classList.remove("sticky");
+                    main.classList.remove("main-margin");
+                }
+            }
+        </script>
+    </body>
+    </html>
