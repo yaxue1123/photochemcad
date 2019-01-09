@@ -41,11 +41,11 @@ This website's stakeholder is Professor Jonathan Lindsey and his team, and targe
  
 ![](screenshot/spectrum.png)
 
- * Download. This page provides download link as well as install guidance for PhotochemCAD™.
+ 6. Download. This page provides download link as well as install guidance for PhotochemCAD™.
 
 ![](screenshot/download.png)
 
- * About. This page introduces backgrdound and version history for PhotochemCAD™.
+ 7. About. This page introduces backgrdound and version history for PhotochemCAD™.
  
 ![](screenshot/about.png)
 
