@@ -1,13 +1,13 @@
 # Photochemcad 2.0 🔅
 
 [Old website](http://www.photochemcad.com/photochemcad_server_backup_20180814/index.html) for photochemcad is a static version with hundreds of pages built mannually and no backend database. The new version [Photochemcad 2.0](http://www.photochemcad.com/) started 
-from scratch, used modern web responsive design and built both front-end as well as back-end. All 339 compounds' information were migrated to MySQL tables, including data source from excel files as well as web scraping from the old website via *XPath* by Python.
+from scratch, used modern web responsive design and built both frontend as well as backend. All 339 compounds' information were migrated to MySQL tables, including data source from excel files as well as web scraping from the old website via *XPath* by Python.
 
 ## Technology Stack
 
-PHP, MySQL, HTML5, CSS3, JQuery, AJAX, Echarts, Responsive Layout, XAMPP. 
+PHP, MySQL, HTML5, CSS3, JQuery, AJAX, Echarts, XAMPP. 
 
-## Design Process
+## Design Principle
 
 This website's stakeholder is Professor Jonathan Lindsey and his team, and target users are mainly chemists in photochem fields. In the design process, I put users in the first place, abandoned bulky styles and only emphasize important information in the straightforward and academic way. Also, I followed rule of agile development, adjusting website style as well as functiosn as the requirements from the stakeholder evolved. 
 
@@ -56,7 +56,7 @@ Masahiko Taniguchi, and Jonathan S. Lindsey are second co-authors. There will be
 
 ## Authors
 
- * **Yaxue Guo** designed, developed and deployed the whole website except for the spectrum chart, and integrated the spectrum chart into the compound detail page. No front-end framework neither PHP framework used. All code started from scratch.
+ * **Yaxue Guo** designed, developed and deployed whole website except for the spectrum chart, and integrated this chart into compound detail page. No frontend framework neither PHP framework used. All code started from scratch.
  
  * **Zhen Xu** developed the spectrum chart for the compound detail page using ECharts library.
  
