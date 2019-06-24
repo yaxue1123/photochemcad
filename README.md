@@ -51,7 +51,7 @@ This website's stakeholder is Professor Jonathan Lindsey and his team, and targe
 
 ## Paper
 
-A paper *Developing a user community in the photosciences.A website for spectral data and access to PhotochemCAD* will be published on [SPIE](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10893/108930O/Developing-a-user-community-in-the-photosciences--a-website/10.1117/12.2508077.short?SSO=1). Yaxue Guo and Zhen Xu are first co-authors. Ann Elizabeth Norcross,
+A paper *Developing a user community in the photosciences.A website for spectral data and access to PhotochemCAD* was published on [SPIE](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10893/108930O/Developing-a-user-community-in-the-photosciences--a-website/10.1117/12.2508077.short?SSO=1). Yaxue Guo and Zhen Xu are first co-authors. Ann Elizabeth Norcross,
 Masahiko Taniguchi, and Jonathan S. Lindsey are second co-authors.
 
 ## Authors
